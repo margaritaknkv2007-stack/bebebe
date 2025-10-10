@@ -6,7 +6,7 @@ else:
     for i in range(2, num):
         if num % i == 0:
             x = False
-        
+            break
     if x:
         print("YES")
     else:
