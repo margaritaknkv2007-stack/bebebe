@@ -1,4 +1,3 @@
-
 strochki = []
 print("Вводите строки:")
 while True:

@@ -1,24 +1,21 @@
-# Вводим список строк с клавиатуры
-stroki = []
-print("Введите строки (пустая строка - конец):")
+strings_list = []
 
+print("Введите строки для списка:")
 while True:
-    s = input()
-    if s == "":
+    line = input()
+    if line == "":
         break
-    stroki.append(s)
+    strings_list.append(line)
 
-# Вводим слово для поиска
-slovo = input("Введите слово для поиска: ")
+search_word = input("Введите слово для поиска: ")
 
-# Проверяем в каждой строке
-nashlos = False
-for stroka in stroki:
-    if slovo in stroka:
-        nashlos = True
+found = False
+for string in strings_list:
+    if search_word in string:
+        found = True
         break
 
-if nashlos:
-    print("Да, такое слово есть")
+if found:
+    print("Слово найдено")
 else:
-    print("Нет, такого слова нет")
+    print("Слово не найдено")

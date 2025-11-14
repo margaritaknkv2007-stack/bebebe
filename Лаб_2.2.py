@@ -7,5 +7,5 @@ for i in num:
         if num % 3 == 0:
             sum += num
     except ValueError:
-        print("Ошибка: '{i}' не является числом")
+        print(f"Ошибка: '{i}' не является числом")
 print(sum)
